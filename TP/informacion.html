@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+    <title>Vista Hermosa</title>
+    <link rel="stylesheet" href="style.css">        
+    <script src="https://kit.fontawesome.com/539bd365de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <!-- NAVEGADOR -->    
+        <div class="menu_bar">
+            <a href="#" class="bt-menu"><i class="fa-solid fa-bars"></i>Menu</a>
+        </div>            
+        <nav class="container fixed-top">            
+            <ul>
+                <li><a href="index.html"><i class="fa-sharp fa-solid fa-house"></i> Inicio</a></li>
+                <li><a href="informacion.html"><i class="fa-solid fa-circle-info"></i> Información</a></li>
+                <li><a href="index.html"><img src="img/logo4.png" class="logo" alt="logo"></a></li>
+                <li><a href="noticias.html"><i class="fa-solid fa-newspaper"></i> Noticias</a></li>
+                <li><a href="contacto.html"><i class="fa-solid fa-newspaper"></i> Contacto</a></li>
+            </ul>                            
+        </nav>                                     
+    </header>    
+    
+    <section class="divFondo">
+        <div id="fondoInfo">                               
+            <div class="boxPresentacion">            
+                <!-- PRESENTACIÓN -->
+                <div class="info">                      
+                    <h1><i>Ventana Informativa</i></h1>                    
+                </div>            
+            </div>
+        </div>
+    </section> 	    
+
+    <br>    
+
+    <main class="contenedorSeccion">        
+        <div class="divContenedor">            
+            <h1>Contenido Principal</h1>
+        </div>
+    </main>
+
+    <br>
+
+    <section class="contenedorSeccion">
+        <div class="divContenedor">            
+            <div class="row">
+                <!--TEXTO CONTENIDO-->
+                <div class="column">                    
+                    <p>El Parque Nacional El Palmar se encuentra al noreste de Argentina, en la provincia de Entre Ríos, a orillas del río Uruguay. Es conocido por el palmar yatay que domina el paisaje. Los caminos conducen a la Calera del Palmar, donde se encuentran las ruinas de un establecimiento jesuita, y a los miradores del arroyo Los Loros y La Glorieta, desde donde se puede observar el parque. Los bosques del parque albergan pájaros carpinteros, linces, armadillos y zorros.</p> 
+                </div>
+                <!--IFRAME-->
+                <div class="column">
+                    <iframe src="https://www.youtube.com/embed/Af0r09rkg-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+                </div>                
+            </div>
+            <div class="row">
+                <div class="column">
+                    <!--TEXTO CONTENIDO-->                                
+                    <p>Provincia: Entre Ríos <br>
+                        Ecorregión: Espinal y Pampa <br>
+                        Superficie: 8.213 ha <br>
+                        Creación: 1966 (Ley N° 16.802/65) <br>
+                        Sitio Ramsar (Humedales de Importancia Internacional) <br> <br>
+    
+                        Localizado en la confluencia de las regiones naturales Pampeana y del Espinal, y recostado sobre el Río Uruguay, en él se encuentra una de las muestras más importantes de los palmares de yatay; especie muy escasa fuera de los límites del Parque por el avance de las actividades agropecuarias.
+                        Aves caminadoras como los inambúes se escapan de cazadores como zorros, gatos monteses y hurones. En las riberas de los cursos de agua surge la selva ribereña, que cobija corzuelas pardas, aguará popés, carpinchos y lobitos de río. Entre las aves de la selva, el tingazú, la urraca común y los anambés son especies comunes.
+                        En las zonas más bajas del pastizal se forman humedales temporarios en los que se dan cita garzas, jacanas, teros y tortugas acuáticas. En cercanías del sector de camping los lagartos overos merodean durante los días calurosos y por las noches las vizcachas pastorean mansamente en los alrededores de sus madrigueras.
+                        La zona ocupó un sitio destacado en la organización jesuítica regional, hecho comprobado por la existencia de ruinas y vestigios de esas actividades.
+                    </p> 
+                        <br> <br>                                                                            
+                </div>                              
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis tempora voluptates recusandae iure illo delectus velit fuga perspiciatis autem atque ipsa, minima pariatur. Facilis repudiandae nobis voluptate quisquam, suscipit fugiat.</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis tempora voluptates recusandae iure illo delectus velit fuga perspiciatis autem atque ipsa, minima pariatur. Facilis repudiandae nobis voluptate quisquam, suscipit fugiat.</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis tempora voluptates recusandae iure illo delectus velit fuga perspiciatis autem atque ipsa, minima pariatur. Facilis repudiandae nobis voluptate quisquam, suscipit fugiat.</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis tempora voluptates recusandae iure illo delectus velit fuga perspiciatis autem atque ipsa, minima pariatur. Facilis repudiandae nobis voluptate quisquam, suscipit fugiat.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <button class="button" onclick='pedirinformacion("marco ","saporiti ","mail ")'>Solicitar informacion </button>
+                <script> 
+                    function pedirinformacion(nombre,apellido,mail){
+                        console.log("nombre:"+nombre+"" + "apellido:" + apellido+" mail:"+mail)
+                        alert("hola " + nombre+ "" +apellido + "" +mail)
+                    }                    
+                </script>
+            </div>
+        </div>
+
+    </section>    
+
+    <br>
+
+    <div class="contenedorSeccion">
+        <h1>Otro Contenido o Carrousel</h1>
+    </div>
+
+    <br>
+
+    <!-- FOOTER -->
+    <footer>        
+        <div class="contenedorFooter">            
+            <!-- LOGO -->            
+            <a href="index.html"><img src="img/logo4.png" class="logo logoFooter" alt="logo"></a>                        
+            <!-- BOTON -->
+            <div class="menu_bar"><a href="#" class="bt-menu"><i class="fa-solid fa-bars"></i></a></div>            
+            <!--MENÚ-->   
+            <div class="contenedorMenu">                                                                 
+                <nav>                        
+                    <ul>
+                        <li><a class="titleNav">MENÚ</a></li>
+                        <li><a href="index.html"><i class="fa-sharp fa-solid fa-house"></i> Inicio</a></li>
+                        <li><a href="informacion.html"><i class="fa-solid fa-circle-info"></i> Información</a></li>                                
+                        <li><a href="noticias.html"><i class="fa-solid fa-newspaper"></i> Noticias</a></li>
+                        <li><a href="contacto.html"><i class="fa-solid fa-address-card"></i> Contacto</a></li>
+                    </ul>                                            
+                </nav>                                                     
+                <!--NAVEGACIÓN-->
+                <nav>
+                    <ul>
+                        <li><a class="titleNav">NAVEGACIÓN</a></li>
+                        <li><a href="#"><i class="fa-solid fa-circle-question"></i> Preguntas frecuentes</a></li>
+                        <li><a href="#"><i class="fa-solid fa-circle-info"></i> Más Navegación</a></li>                                
+                        <li><a href="#"><i class="fa-solid fa-newspaper"></i> Más Navegación</a></li>                                
+                    </ul>                             
+                </nav>
+                <!--REDES-->
+                <nav>
+                    <ul>                        
+                        <li><a class="titleNav">REDES</a></li>                        
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>                                
+                        <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                    </ul>                              
+                </nav>
+                <!--UBICACIÓN-->
+                <nav>
+                    <ul>
+                        <li><a class="titleNav">UBICACIÓN</a></li>                               
+                        <li><a class="titleNav mapNav">Av. 9 de Julio 100, CABA</a></li>                        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9869.146892199957!2d-58.38211700000001!3d-34.603802!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacf425a4a19%3A0xaf19ab7297421a8!2sAv.%209%20de%20Julio%20%26%20Av.%20Corrientes%2C%20C1048%20CABA!5e1!3m2!1ses-419!2sar!4v1663284183638!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        
+                    </ul>
+                </nav>
+            </div>                
+        </div>                    
+    </footer>
+    
+    
+    <!-- SCRIPT -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="menu.js"></script>
+    
+</body>
+</html>

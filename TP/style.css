@@ -1,0 +1,928 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
+
+*{      
+  margin: 0;    
+  padding: 0;
+}
+
+body {   
+    font-family: 'Fraunces', serif;	    
+    height: 100vh;   
+    background: linear-gradient(
+        90deg,
+        rgb(187, 238, 242) 0%,
+        rgb(136, 188, 214) 50%,
+        rgb(215, 216, 216) 100%
+        );
+  } 
+
+/******************************************** ESTILOS GENERALES ***********************************************/
+
+  /* NAVEGADOR */
+    header {
+      width: 100%;
+      position: fixed;     
+      top: 0;
+      right: 0;         
+    }
+
+    header nav{        
+      width: 90%;
+      margin: auto auto;
+      background: #024959;         
+      background: transparent;    
+      height: 180px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      position: relative;                
+    }
+
+    .menu_bar{
+      display: none;
+    }   
+
+    header nav ul{
+      overflow: hidden;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;    
+    }
+
+    header nav ul li{
+      float: left;
+    }  
+
+    header nav ul li a {    
+      padding: 20px;
+      margin: 20px;
+      display: block;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;    
+    }  
+
+    header nav ul li a:hover {
+      background: #037E8C;
+      color: #fff;
+      padding: 20px;    
+      border-radius: 2px;
+    }
+
+    header nav ul li i{
+      margin-right: 5px;
+    }  
+    
+    /* Logo */
+    .logo{
+      border-radius: 5px;
+      width: 80px; 
+      height: 80px; 
+      display: inline-block;            
+      justify-content: left; 
+    }
+
+    header nav ul li a .logo:hover {
+      padding: 0px;                
+    }
+    
+    /* Navegador Scroll */ 
+    nav.abajo{
+      background: #fff;     
+    }
+    
+    nav.abajo ul li a,     
+    nav.abajo div i {
+      color: #037E8C;   
+      background: #fff; 
+    }  
+
+  /* PRESENTACION */
+    
+    .divFondo{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;              
+    }
+
+    .info h1{    
+      color: black; 
+      font-size: 40px;
+      font-weight: lighter;
+      margin-bottom: 10px;
+      text-align: justify;      
+    }   
+
+    .info p{
+      font-size: 18px;
+      color: #024959;       
+    }
+
+  /* FOOTER */
+
+    footer {
+      width:90%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;               
+  }
+
+  .contenedorFooter{
+      display: flex;
+      background: #024959; 
+      width:auto;
+      justify-content: center;
+  }
+
+  .contenedorMenu{
+      display: flex;        
+      width: auto;
+  }
+
+  footer nav{        
+      background: #024959;            
+      width:auto;
+  }
+
+  .menu_bar{
+      display: none;
+  }   
+
+  footer nav ul{
+  overflow: hidden;
+  list-style: none;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+  margin: 10px;      
+} 
+
+  footer nav ul li a {
+    color: #fff;
+    padding: 10px;
+    display: block;
+    text-decoration: none;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;  
+  }  
+
+  footer nav ul li i{
+    margin-right: 10px;
+  } 
+
+  footer nav ul li .mapNav {
+    font-size: 12px;
+    }
+
+  footer nav iframe{      
+    width: 180px;
+    height: 150px;
+    border: 1px solid #ccc; 
+    filter: brightness(60%);
+  }
+
+  footer nav ul li a:hover {
+    background: #037E8C;
+    color: #fff;
+  }
+
+  footer nav ul li .titleNav:hover {
+    background: transparent;
+    opacity: 0.7;
+    color: #fff;
+    }
+
+    .logoFooter{
+      width: 80px; 
+      height: 80px;       
+      padding: 10px;      
+      border-radius: 5px;            
+    }
+
+  /* GENERALES */    
+    p{
+      text-align: justify;
+    }
+
+    hr{
+      width: 90%;      
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;            
+      box-shadow: 0 4px 8px 0 rgba(87, 156, 97, 0.377);
+    }
+     
+     .button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;      
+      text-align: center;
+      cursor: pointer;
+      width: 75%;
+      font-size: 18px;
+      margin-left: auto;
+      margin-right: auto;      
+      background: #000000be;  
+      background: -webkit-linear-gradient(to right, #6f6e6ebd, #000000be);  
+      background: linear-gradient(to right, #6f6e6ebd, #000000be);   
+      border: 2px solid #ccc;
+      border-radius: 5px;  
+    }
+    
+    .button:hover {
+      opacity: 0.7;
+      color: #fff;
+    }
+    
+    .contenedorSeccion{
+      width: 90%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+      margin-top: 4px;
+      background: #fff;         
+      border: 1px solid #ccc;      
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    } 
+
+    .contenedorSeccion h1{
+      margin: 20px;
+    }
+    
+    .contenedorSeccion p{
+      padding: 20px;
+    }
+
+    .divContenedor{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background: white;
+      margin: 20px;
+      padding: 20px;
+      width: 90%;   
+      border: 1px #ccc solid;      
+    }
+
+
+/******************************************** PAGINA: index.html **********************************************/
+         /******************************************************************************************/
+
+    /*** PRESENTACION: Imagenes ***/    
+      #fondoIndex{    
+        background-image: url(img/parque6.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;         
+        background-position: center center;            
+        min-height: 100vh;            
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;   
+        text-align: center; 
+        margin-left: auto;
+        margin-right: auto;       
+      }
+
+    /*** MAIN: Grid ****/
+      .grid{      
+        border: 1px solid #ccc;      
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);      
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #fff;        
+      }
+
+      .grid-container {
+        display: grid;
+        gap: 10px;
+        background-color: #fff;            
+        border-radius: 5px;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;      
+        font-size: 16px;
+        display: flex;
+        text-align: justify; 
+        justify-content: center;
+        align-items: center;       
+        align-content: center;
+        margin-top: 20px;
+        margin-left: 40px;
+      }
+
+      .grid-item img{                        
+        margin-right: 80px;                
+        border-radius: 10px;
+        border: 2px solid #ccc;      
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+        width: auto;
+        height: auto;
+      }
+
+      .grid-item p{        
+        text-align: justify;
+        line-height: 2.0;         
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+
+      .item1 p{
+        margin-top: 20px;
+      }
+
+      .grid-item img{        
+        width: auto;      
+        height: auto;          
+      }
+      
+      .item1 {
+        grid-column: 1 / span 1;
+        grid-row: 1;
+      }
+    
+      .item2 {
+        grid-column: 2 / span 1;
+        grid-row: 1; 
+      }
+
+      .item3 p{
+        margin-right: 80px;        
+      }
+
+      .item3{
+        grid-column: 1 / span 2;
+        grid-row: 2;
+      }   
+      
+    /*** MAIN: Card ****/      
+    .sectionCard{
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;   
+      width: 100%;               
+    }
+
+    .card1{
+      width: 75%;
+      height: 75%;
+      margin-left: 20px;
+      margin-left: auto;
+      margin-right: auto;   
+      padding: 10px;   
+      display: flex;   
+    }
+
+    .cards {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      max-height: 200px;      
+      margin: auto;
+      text-align: center;
+      font-family: arial;      
+      border: 1px solid #ccc;
+      border-radius: 5px;      
+      flex-direction: row-reverse;
+      padding: 20px;   
+      display: flex; 
+    }
+    
+     /* Card Texto */
+    .containerText{
+      text-align: justify;
+      padding: 10px;            
+      width: 100%;
+      height: 100%;
+    }
+
+    .containerText h5{
+      text-align: center;
+    }
+
+    /* Card Imagen */     
+    .cards img{
+      width: auto; 
+      height: auto;      
+      border-radius: 5px;
+      border: 2px solid #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      width:100%; 
+      height: 100%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);       
+    }
+
+/***************************************** PAGINA: informacion.html ********************************************/
+         /******************************************************************************************/
+
+  /* Contenido Informativo */
+    .row{
+      display: flex;      
+    }
+
+    .column {
+      float: left;
+      width: 100%;
+      padding: 10px;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;  
+    } 
+    
+    
+/***************************************** PAGINA: contacto.html **********************************************/
+         /******************************************************************************************/    
+
+  /* FORMULARIO */  
+    #contacto{
+      display: flex;
+    }
+
+
+/************************ PAGINA: informacion.html + noticias.html + contacto.html ***************************/
+         /******************************************************************************************/
+
+    /* PRESENTACION: Box y Imagenes */
+    .boxPresentacion{   
+      border: 1px white solid;
+      border-radius: 5px;                       
+      color: white;                 
+      left: 530px;
+      top: 150px;                               
+      width: 75%;  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;   
+      text-align: center;    
+      margin-top: 50px; 
+      padding: 50px 0px 50px;
+    }
+
+    #fondoInfo{        
+      background-image: url(img/parque6.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;         
+      background-position: center center;                
+      height: 25vh;  
+      width: 90%;      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;   
+      text-align: center;  
+      margin-left: auto;
+      margin-right: auto;            
+      min-height: 75vh;   
+      height: auto;            
+    }
+
+/********************************************* MEDIA QUERY's **************************************************/
+         /******************************************************************************************/
+         /******************************************************************************************/
+         /******************************************************************************************/
+
+
+/*Media query*/
+@media screen and (max-width:500px){
+
+  /*NAVEGACION*/
+  header nav{
+    width: 80%;
+    height: 100%;
+    left: -100%;
+    margin: 0;
+    position: fixed;
+  }
+  
+  header nav ul li{
+    display: block;
+    float: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+  }
+  
+  .menu_bar{
+    display: block;
+    width: 100%;
+    background-color: #ccc;
+  }
+  
+  .menu_bar .bt-menu{
+    display: block;
+    padding: 20px;
+    width: 100%;
+    background-color: #024959;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .menu_bar i{
+    float: right;
+    font-size: 20px;
+  }
+
+  header nav ul{
+    display: block;
+  }
+  
+    /* PRESENTACION */      
+  .divFondo{
+    width: auto;
+  }
+
+  .boxPresentacion{                        
+    border: none;    
+    margin: 5px;   
+    padding: 5px;        
+    width: 50%;
+    height: 50%;  
+} 
+
+  .divContenedor{
+    width: auto;
+  }
+
+  .info h1{
+    font-size: 24px;
+  }
+
+  .contenedorSeccion h1{
+    font-size: 24px;
+  }
+
+    /*** MAIN: Grid ****/
+    .grid-container {
+      display: block;
+    }
+
+    .grid-item {      
+      font-size: 12px;      
+      margin-top: 20px;
+      margin-left: 10px;      
+    }
+
+    .grid-item img{        
+      width: 75%;      
+      height: 75%;    
+      margin-left: 50px;      
+    }
+
+    /*** MAIN: Card ****/      
+    .sectionCard{      
+      display: grid;          
+      }
+
+      .cards{
+        display: block;
+        margin-top: 20px;
+      }
+
+      .containerText{
+        font-size: 12px;
+      }
+
+      .button{
+        width: 50%;
+        height: 50%;
+        font-size: 12px;
+        padding: 2px;        
+      }
+
+      .cards img{        
+        width: 100%;  
+        height: 50%;
+        max-width: 300px;
+        max-height: 150px;    
+        margin: auto;        
+        display: flex; 
+      }
+
+  /* Contenido Informativo */
+    .row{
+      display: block;      
+    }
+
+    .column {            
+      display: block;    
+      font-size: 12px;
+    } 
+
+      /* FORMULARIO */  
+      #contacto{
+        display: block;
+      }
+      
+
+      
+      
+
+   /* CONTENEDOR PRINCIPAL */
+  iframe{
+    width: 250px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+@media screen and (min-width:500px) and (max-width:900px){
+  .divContenedor{
+    width: auto;
+  }
+
+  /* CONTENEDOR PRINCIPAL */
+
+  iframe{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+}
+
+@media screen and (max-width:900px){
+
+    /*NAVEGACION*/
+    header nav{
+        width: 80%;
+        height: 100%;
+        left: -100%;
+        margin: 0;
+        position: fixed;
+      }
+      
+      header nav ul li{
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+      }
+      
+      .menu_bar{
+        display: block;
+        width: 100%;
+        background-color: #ccc;
+      }
+      
+      .menu_bar .bt-menu{
+        display: block;
+        padding: 20px;
+        width: 100%;
+        background-color: #024959;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      
+      .menu_bar i{
+        float: right;
+        font-size: 20px;
+      }
+
+      header nav ul{
+        display: block;
+      }
+      
+
+      /*PRESENTACION*/    
+      #fondo{                          
+        width: auto;              
+    }
+
+      .cajaPresent{                                          
+        left: auto;               
+        width: 25%;            
+    }
+
+    /* CONTENEDOR PRINCIPAL */
+    iframe{      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+
+   /*
+    .contenedorIframe{
+      display: block;
+    }
+   */
+
+    /*FOOTER*/
+    footer nav{
+        width: 80%;
+        height: 100%;
+        left: -100%;
+        margin: 0;
+        position: fixed;
+      }
+      
+      footer nav ul li{
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+      }
+      
+      .menu_bar{
+        display: block;
+        width: 100%;
+        background-color: transparent;
+      }
+      
+      .menu_bar .bt-menu{
+        display: block;
+        padding: 20px;
+        width: 100%;
+        background-color: #024959;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      
+      .menu_bar i{
+        float: right;
+        font-size: 20px;
+      }
+
+      footer nav ul{
+        display: block;
+      }
+
+}      
+  
+/************************************************ ELIMINAR *****************************************************/
+         /******************************************************************************************/
+         /******************************************************************************************/
+         /******************************************************************************************/
+
+    /* PRESENTACION: Imagenes 
+    
+    #fondo{
+        padding: 140px;
+        background-image: url(img/fondo.png);
+        background-size: cover;
+        background-repeat: no-repeat;         
+        background-position: center center;                
+        height: 25vh;          
+        width: 800px;     
+        display: block;
+        margin-left: auto;
+        margin-right: auto;             
+      }
+      */
+      
+
+  /* FORMULAARIO 
+  
+  #contacto{
+      display: flex;
+    }
+    */  
+
+    /*     
+    .imgLogo{      
+      margin: 5px;
+      padding: 5px;      
+    }
+
+    */
+
+/*
+    .infoPresent{                        
+        border: 1px solid white;
+        border-radius: 5px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;      
+        text-align: center;
+        padding: 75px;   
+        word-wrap: break-word;        
+    }
+*/         
+
+   /*   
+    .btnInfo{
+      background: #3d98a0;  
+      background: -webkit-linear-gradient(to right, #7d8e8e, #3d98a0);  
+      background: linear-gradient(to right, #7d8e8e, #3d98a0);     
+      border: none;
+      border-radius: 20px;    
+      font-family: 'roboto';
+      font-weight: bold;    
+      font-weight: 900;
+      padding: 20px;    
+    }
+   */ 
+
+  /* MAIN (index.html) */
+  /* Pantalle Principal */     
+  
+  /*  
+  .btnGrey{
+      background: #000000be;  
+      background: -webkit-linear-gradient(to right, #6f6e6ebd, #000000be);  
+      background: linear-gradient(to right, #6f6e6ebd, #000000be);     
+      border: none;
+      border-radius: 20px; 
+      color: #fff;          
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;     
+      font-size: 16px;
+      padding: 20px 32px;
+      margin: 40px 2px;
+      cursor: pointer;  
+      display: flex;   
+      justify-content: center;   
+      align-items: center;
+      align-content: center;
+    }
+
+  */
+   
+
+   
+
+    /* CONTENEDOR PRINCIPAL (informacion.html) */
+    /* Informativo */
+
+ 
+    
+    /*
+    ELIMINAR:
+    .contenedorIframe{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;      
+    }
+
+    .contenedorIframe iframe{
+      width: 560;
+      height: 315;
+    }
+
+    .viajes{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;      
+    }
+    */
+
+  /*
+  ELIMINAR:
+  
+    .contenidoIframe{
+       display: block;
+    }
+       
+
+    .btnHomero{
+      background: #000000be;  
+      background: -webkit-linear-gradient(to right, #6f6e6ebd, #000000be);  
+      background: linear-gradient(to right, #6f6e6ebd, #000000be);     
+      border: none;
+      border-radius: 20px;    
+      color: #fff;
+      padding: 20px;
+      margin: 20px;
+    }
+  */
